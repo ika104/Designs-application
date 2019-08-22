@@ -527,6 +527,7 @@ p {
 
 
 /* =========================================*/ 
+
 .services
 {
     background-color: #f1f1f1;
@@ -627,3 +628,38 @@ p {
 }
 
 /* ======================================= */
+/* ======================================= */
+/* Footer */
+
+.footer {
+    padding: 40px 0;
+    background-color: #333;
+    text-align: center;
+}
+.footer .soical-icons {
+    margin-bottom: 20px
+}
+.footer .soical-icons li {
+    display: inline-block;
+}
+.footer .soical-icons li a {
+    color: #FFF;
+    display: block;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 40px;
+    -webkit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+}
+.footer .soical-icons li a:hover {
+    color: #ff305b;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 18px
+}
+
+.footer p a {
+    color: #ff305b;
+}
