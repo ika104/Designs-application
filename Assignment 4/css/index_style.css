@@ -527,3 +527,37 @@ p {
 
 
 /* =========================================*/ 
+.services
+{
+    background-color: #f1f1f1;
+    padding: 7% 0px;
+    text-align: center;
+    overflow: auto;
+}
+
+.services h3
+{
+    padding: 10px 0px;
+}
+
+.services .service
+{
+    width: 25%;
+    float: left;
+    padding: 3% 10px;
+}
+
+.service:hover
+{
+    background-color: #fff;
+}
+
+.service img
+{
+    transition: all 1s ease-in-out;
+}
+
+.service:hover img
+{
+    transform: scale(1.2, 1.2);
+}
