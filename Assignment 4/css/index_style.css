@@ -554,10 +554,76 @@ p {
 
 .service img
 {
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
 
 .service:hover img
 {
+    -webkit-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2);
 }
+
+
+/*======================================*/
+/* Contact Us */
+
+.contact-us {
+    padding: 80px 0;
+    margin: auto;
+    text-align: center;
+    
+}
+.contact-us .contact-form {
+    width: 100%;
+    float: left;
+    
+}
+.contact-us .contact-form form {
+    width: 80%;
+    margin:20px auto;
+    display: table
+}
+
+
+.contact-us .contact-form input[type="text"], .contact-us .contact-form input[type="email"] {
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 50%;
+/*    margin-left: 5%;*/
+    float: left;
+    border: 1px solid #b3b1b1;
+}
+
+.contact-us .contact-form .subject input[type="text"] {
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    float: left;
+    border: 1px solid #b3b1b1;
+}
+
+.contact-us textarea {
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 25px;
+}
+
+.contact-us .submit {
+    background-color: #ff305b;
+    border: 1px solid #ff305b;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border-radius: 5px;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+.contact-us .submit:hover {
+    background-color: #EC2403
+}
+
+/* ======================================= */
