@@ -1,0 +1,286 @@
+*,
+ ::before,
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.three-lines {
+    padding-bottom: 5%;
+}
+
+.two-lines {
+    content: "";
+    width: 90px;
+    height: 12px;
+    margin: auto;
+    border-bottom: 1px solid #ff305b;
+    border-top: 1px solid #ff305b;
+    position: relative;
+}
+
+.line {
+    content: "";
+    width: 180px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: -45px;
+    border-top: 1px solid #ff305b;
+}
+
+p {
+    color: #555;
+}
+
+.services h2,
+.portfolio h2,
+.testimonial h2,
+.blog h2,
+.contact-us h2 {
+    padding: 10px 0px;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.home {
+    background-image: url(images/slider/slider-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 100%;
+}
+
+.home-transparent {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav ul {
+    overflow: auto;
+    list-style: none;
+}
+
+.nav li {
+    float: right;
+    padding: 20px 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.nav a:hover {
+    color: #ff305b;
+    font-weight: 50;
+}
+
+.nav .small-logo {
+    float: left;
+}
+
+.nav .small-logo a {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav .small-logo a,
+.nav .home-btn a {
+    color: #ff305b;
+}
+
+.nav .home-btn a {
+    font-weight: 50;
+}
+
+.head {
+    padding: 15% 0px;
+}
+
+.head h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.head h2 {
+    color: #ff305b;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.head h3 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.head h3:after {
+    content: "";
+    animation: typewriter 3s infinite;
+}
+
+@keyframes typewriter {
+    0% {
+        content: "Designer  |";
+    }
+    5% {
+        content: "Designer|";
+    }
+    10% {
+        content: "Design|";
+    }
+    15% {
+        content: "Desi|";
+    }
+    20% {
+        content: "De|";
+    }
+    25% {
+        content: "|";
+    }
+    30% {
+        content: "De|";
+    }
+    35% {
+        content: "Deve|";
+    }
+    40% {
+        content: "Develo|";
+    }
+    45% {
+        content: "Develope|";
+    }
+    50% {
+        content: "Developer|";
+    }
+    55% {
+        content: "Developer|";
+    }
+    60% {
+        content: "Develop|";
+    }
+    65% {
+        content: "Devel|";
+    }
+    70% {
+        content: "Dev|";
+    }
+    75% {
+        content: "D|";
+    }
+    80% {
+        content: "Des|";
+    }
+    85% {
+        content: "Desig|";
+    }
+    90% {
+        content: "Designe|";
+    }
+    95% {
+        content: "Designer|";
+    }
+    100% {
+        content: "Designer |";
+    }
+}
+
+@media screen and (max-width:900px) {
+    body .rating .rate,
+    .portfolio .item {
+        width: 50%;
+        padding: 5px;
+    }
+    body .services .service,
+    body .about-desc,
+    body .about-img,
+    body .blog .item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    body .home .container {
+        width: 100%;
+    }
+    body .nav li {
+        padding: 5px;
+        float: left;
+    }
+    body .nav .small-logo {
+        float: none;
+    }
+    body .head h2 {
+        font-size: 50px;
+    }
+    body .about-desc li {
+        width: 100%;
+    }
+    body .about-desc .download-btn {
+        margin-right: 10px;
+        padding: 10px 20px;
+    }
+    body .about-img {
+        padding-top: 10px;
+    }
+    body .portfolio a {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    body .rating .rate img {
+        width: 30%;
+    }
+    body .testimonial .feedback {
+        width: 95%;
+    }
+    body .testimonial .feedback::before {
+        border: solid 50px;
+        border-color: #ff305b transparent transparent #ff305b;
+    }
+    body .testimonial .feedback-writer {
+        width: 20%;
+        padding: 0px;
+    }
+    body .testimonial .feedback>img {
+        top: 10%;
+        left: 5%;
+    }
+    body .testimonial .feedback-desc {
+        width: 70%;
+        font-size: 14px;
+        padding-right: 5px;
+    }
+    body .testimonial .feedback-desc a img {
+        width: 5%;
+    }
+    body .contact-us form {
+        width: 90%;
+        margin: auto;
+    }
+    body .contact-us .type4 {
+        padding: 10px;
+    }
+    body .footer ul {
+        width: 50%;
+    }
+    body .footer h6 {
+        font-size: 14px;
+    }
+}
