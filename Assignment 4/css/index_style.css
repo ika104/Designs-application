@@ -272,6 +272,30 @@ p {
     }
 }
 
+.rating {
+    background-color: #f1f1f1;
+}
+
+.rating .container {
+    overflow: auto;
+    padding: 7% 0px;
+    text-align: center;
+}
+
+.rate {
+    width: 25%;
+    float: left;
+}
+
+.rate span {
+    font-size: 30px;
+}
+
+.rate h3 {
+    font-size: 16px;
+    color: #555;
+}
+
 .testimonial .container {
     padding: 7% 0px;
 }
@@ -391,8 +415,6 @@ p {
 .blog .next-icon {
     width: 5%;
 }
-
-
 
 
 /* ========================================= */
@@ -571,15 +593,16 @@ p {
 
 /*======================================*/
 
+
 /*-------------------------------*/
 
-.Portfolio{
+.Portfolio {
     background-color: #fff;
     text-align: center;
     padding: 50px 0;
 }
 
-.Portfolio h2{
+.Portfolio h2 {
     padding: 20px 0;
     font-size: 40px;
     font-weight: 800;
@@ -588,80 +611,77 @@ p {
     margin-bottom: 40px;
     position: relative;
     text-transform: capitalize;
-        
 }
-.Portfolio h2:after{
+
+.Portfolio h2:after {
     content: "";
     position: absolute;
     bottom: 5px;
     width: 15%;
     margin-left: 43%;
     left: 0;
-    border: 1px solid #ff305b; 
-
+    border: 1px solid #ff305b;
 }
 
-.Portfolio h2:before{
+.Portfolio h2:before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 4px 0 5px;
     width: 8%;
-    border-style:  solid;
+    border-style: solid;
     border-color: #ff305b;
     border-width: 1px 0;
     margin-left: 46%;
 }
 
-.Portfolio-list{
-
+.Portfolio-list {
     padding-bottom: 3%;
 }
 
-.portfolio a
-{
+.portfolio a {
     text-decoration: none;
     padding: 10px 10px;
     color: #000;
     font-size: 20px;
 }
 
-.portfolio .all-btn
-{
+.portfolio .all-btn {
     color: #ff305b;
 }
-.Portfolio-list a:hover{
+
+.Portfolio-list a:hover {
     color: #ff305b
 }
 
-
-.Portfolio-items{
+.Portfolio-items {
     position: relative;
     background-color: #fff;
 }
-.item-layer{
-   width: 33.333%;
+
+.item-layer {
+    width: 33.333%;
     float: left;
-     padding: 20px;
+    padding: 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.Portfolio-item{
+.Portfolio-item {
     position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-   
 }
 
-.Portfolio-item img{
+.Portfolio-item img {
     width: 100%;
     cursor: pointer;
     position: relative;
 }
-.Portfolio-overlay{
-   position: absolute;
+
+.Portfolio-overlay {
+    position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
@@ -671,20 +691,24 @@ p {
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
 }
-.Portfolio-item:hover .Portfolio-overlay{
+
+.Portfolio-item:hover .Portfolio-overlay {
     opacity: 1;
 }
 
-.Portfolio-overlay i{
+.Portfolio-overlay i {
     position: absolute;
     bottom: 20px;
     right: 20px;
     bottom: 15px;
     color: #ff305b;
     font-size: 20px;
-    
 }
+
+
 /*----------------------------------------*/
+
+
 /* Contact Us */
 
 .contact-us {
@@ -793,12 +817,9 @@ p {
 }
 
 
-
-
-
-
-
 /* ======================================= */
+
+
 /* Responsive */
 
 @media screen and (max-width:900px) {
@@ -917,16 +938,13 @@ p {
         border-radius: 4px;
         margin-right: 8%;
     }
-    .item-layer{
-   width: 50%;
-    
+    .item-layer {
+        width: 50%;
+    }
 }
-    
-}
+
 @media screen and (max-width: 600px) {
-      .item-layer{
-   width: 100%;
-    
-}
-    
+    .item-layer {
+        width: 100%;
+    }
 }
