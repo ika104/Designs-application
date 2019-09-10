@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <title> صَوِّتْ الآن </title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container py-3">
+            <div class="title py-3 clearfix">
+                <div class="right-title float-right">
+                    <p><a href="index.html"> المرشحين </a> /
+                        <strong>اسم الموقع </strong> من <strong>اسم البلد</strong>
+                    </p>
+                </div>
+                <div class="left-title float-left">
+                    <img src="images/member-2.jpg" class="img-fluid img-designer">
+                    <div class="collect btn" id="collect-title">تجميع</div>
+
+                    <div class="collect-modal">
+                        <i class="fas fa-times text-dark fa-lg py-4 " id="close"></i>
+
+                        <div class="card text-center">
+                            <div class="row no-gutters">
+                                <div class="col-md-6">
+                                    <div class="card-img">
+                                        <img src="images/website2.jpg" class=" img-fluid" alt="...">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center pt-4">
+                                            <i class="fas fa-file-upload fa-2x"></i>
+                                        </h5>
+                                        <p class="card-text p-5">
+                                            <strong>تنظيم ومشاركة المفضلة لديك</strong> <br> قم بتنظيم مواقعك المفضلة وإنشاء مجموعات لمشاريعك وشاركها مع فريقك أو عملائك
+                                        </p>
+                                        <div class="create-collection">
+                                            <h5>
+                                                إنشاء مجموعة جديدة
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="likes btn px-4">
+                        <i class="fas fa-heart float-left" id="like">
+                            <div id="count" class="float-right ml-3"></div>
+                        </i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-10 m-auto">
+                    <div class="vote mt-4">
+                        <div class="img-content">
+                            <img src="images/website-one.png" class="img-fluid">
+                            <div class="vote-overlay">
+                                <div class="overlay-bottom">
+                                    <a href="#">
+                                        <i class="fas fa-share text-white mt-2"></i>
+                                    </a>
+                                </div>
+                                <div class="result text-center">
+                                    <div class="voters">
+                                        <!--<div class="number-of-voter py-3 bg-danger"> عدد الاصوات </div>-->
+                                        <div class="average timer"></div>
+                                    </div>
+                                    <div class="edit-vote">
+                                        تعديل صوتك <i class="fas fa-undo"></i>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="slide design active">
+                            <ul class="degree clearfix">
+                                <li class="vote-value">1</li>
+                                <li class="vote-value">2</li>
+                                <li class="vote-value">3</li>
+                                <li class="vote-value">4</li>
+                                <li class="vote-value">5</li>
+                                <li class="vote-value">6</li>
+                                <li class="vote-value">7</li>
+                                <li class="vote-value">8</li>
+                                <li class="vote-value">9</li>
+                                <li class="vote-value">10</li>
+                            </ul>
+                            <div class="step clearfix">
+                                <span class="float-right">التصميم</span>
+                                <span class="float-left">1/4</span>
+                            </div>
+                        </div>
+
+                        <div class="slide usability">
+                            <ul class="degree clearfix">
+                                <li class="vote-value">1</li>
+                                <li class="vote-value">2</li>
+                                <li class="vote-value">3</li>
+                                <li class="vote-value">4</li>
+                                <li class="vote-value">5</li>
+                                <li class="vote-value">6</li>
+                                <li class="vote-value">7</li>
+                                <li class="vote-value">8</li>
+                                <li class="vote-value">9</li>
+                                <li class="vote-value">10</li>
+                            </ul>
+                            <div class="step clearfix">
+                                <span class="float-right">سهوله الاستخدام</span>
+                                <span class="float-left">2/4</span>
+                            </div>
+                        </div>
+
+                        <div class="slide creativity">
+                            <ul class="degree clearfix">
+                                <li class="vote-value">1</li>
+                                <li class="vote-value">2</li>
+                                <li class="vote-value">3</li>
+                                <li class="vote-value">4</li>
+                                <li class="vote-value">5</li>
+                                <li class="vote-value">6</li>
+                                <li class="vote-value">7</li>
+                                <li class="vote-value">8</li>
+                                <li class="vote-value">9</li>
+                                <li class="vote-value">10</li>
+                            </ul>
+                            <div class="step clearfix">
+                                <span class="float-right"> الابداع</span>
+                                <span class="float-left">3/4</span>
+                            </div>
+                        </div>
+
+                        <div class="slide content">
+                            <ul class="degree clearfix">
+                                <li class="vote-value">1</li>
+                                <li class="vote-value">2</li>
+                                <li class="vote-value">3</li>
+                                <li class="vote-value">4</li>
+                                <li class="vote-value">5</li>
+                                <li class="vote-value">6</li>
+                                <li class="vote-value">7</li>
+                                <li class="vote-value">8</li>
+                                <li class="vote-value">9</li>
+                                <li class="vote-value">10</li>
+                            </ul>
+                            <div class="step clearfix">
+                                <span class="float-right"> المحتوى </span>
+                                <span class="float-left">4/4</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="vote-now">
+                        صوت الان
+                    </div>
+                    <div class="confirm-vote">
+                        تأكيد تصويتك
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
