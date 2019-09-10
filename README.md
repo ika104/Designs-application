@@ -1,2 +1,2 @@
-# Sticky-notes-application
-This is our sticky notes web / desktop application  
+# Designs-application
+This is our  web / desktop application  
