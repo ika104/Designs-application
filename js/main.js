@@ -260,7 +260,8 @@ if (indexPage != null) {
         });
 
     })
-    $("#close").click(function() {
+    $(".close").click(function() {
+       
         $(".collect-modal").hide();
     })
 
