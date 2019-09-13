@@ -17,7 +17,7 @@ body {
     overflow-x: hidden;
     direction: rtl;
     text-align: right;
-    background: url(../img/bgpateern.png) center center scroll
+    background: url(../images/bgpateern.png) center center scroll
 }
 
 a {
@@ -259,7 +259,7 @@ ul {
 /* content-home */
 
 .content-home {
-    background-image: url(../img/purple-rock-scissors-website.jpg);
+    background-image: url(../images/purple-rock-scissors-website.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
