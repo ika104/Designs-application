@@ -102,7 +102,7 @@ if (indexPage != null) {
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
     })
-
+ 
     var increment = true;
 
     $('.likes').click(function() {
@@ -128,6 +128,34 @@ if (indexPage != null) {
         $(".collect-modal").hide();
     });
 } else if (votePage != null) {
+
+    var increment = true;
+
+    $('.likes').click(function() {
+        
+        $('.likes').css({ "color": "#49c5b6", "border-color": "#49c5b6" });
+        let lik = $(this).find($(".count"));
+        let likeNow = Number(lik.html());
+        let increamentlikes = likeNow + 1;
+        let decreamentlikes = increamentlikes - 1;
+        lik.html(increamentlikes);
+        $('.likes').click(function() {
+            lik.html(decreamentlikes);
+        });
+
+    });
+
+    $(".collect").click(function() {
+        $(".collect-modal").show();
+        $('#collect-title').css({ "color": "#49c5b6", "border-color": "#49c5b6" });
+
+    });
+    $(".close").click(function() {
+        $(".collect-modal").hide();
+    });
+
+
+
     let num = 0;
 
     $(".vote-now").click(function() {
@@ -202,6 +230,7 @@ if (indexPage != null) {
         $(".design").show();
         yourVote()
     });
+    
     // Nominees
 } else if (nomineesPage != null) {
 
