@@ -30,12 +30,12 @@ $('#dismiss, .overlay-page').click(function() {
     $('.overlay-page').removeClass('toggled');
 });
 
-let indexPage = document.getElementById('doc0');
-let uploadPage = document.getElementById('doc1');
-let winnersPage = document.getElementById('doc2');
-let votePage = document.getElementById('doc3');
-let nomineesPage = document.getElementById('doc4');
-let registrationPage = document.getElementById('doc5');
+let indexPage = document.getElementById('homepage');
+let uploadPage = document.getElementById('upload-page');
+let winnersPage = document.getElementById('winners-page');
+let votePage = document.getElementById('vote-page');
+let nomineesPage = document.getElementById('nominees-page');
+let registrationPage = document.getElementById('registration-page');
 // index 
 if (indexPage != null) {
     $(window).scroll(function() {
@@ -102,7 +102,7 @@ if (indexPage != null) {
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
     })
- 
+
     var increment = true;
 
     $('.likes').click(function() {
@@ -132,7 +132,7 @@ if (indexPage != null) {
     var increment = true;
 
     $('.likes').click(function() {
-        
+
         $('.likes').css({ "color": "#49c5b6", "border-color": "#49c5b6" });
         let lik = $(this).find($(".count"));
         let likeNow = Number(lik.html());
@@ -230,13 +230,27 @@ if (indexPage != null) {
         $(".design").show();
         yourVote()
     });
-    
+
     // Nominees
 } else if (nomineesPage != null) {
 
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
     })
+
+    $(".likeBtn").click(function() {
+
+        let likes = $(this).find("span");
+        let likesNow = Number(likes.html());
+
+        let incrementLikes = likesNow + 1;
+        let decrementLikes = incrementLikes - 1;
+
+        likes.html(incrementLikes);
+        $(".likeBtn").click(function() {
+            likes.html(decrementLikes);
+        });
+    });
 
     $(".collect").click(function() {
         $(".collect-modal").show();
