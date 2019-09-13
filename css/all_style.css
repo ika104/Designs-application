@@ -1045,7 +1045,10 @@ a:hover {
 .edit-vote {
     color: #49c5b6;
 }
-
+.confirm-sign{
+    /* opacity: 0.4; */
+    display: none;
+}
 
 /*************************** End Vote Page ***************************/
 

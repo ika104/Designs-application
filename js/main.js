@@ -230,7 +230,12 @@ if (indexPage != null) {
         $(".design").show();
         yourVote()
     });
-
+    $(".confirm-vote").click(function(){
+        $(".confirm-vote").hide();
+            $(".vote").hide();
+            $(".confirm-sign").fadeIn(3000);
+            // $(".confirm-sign").css("opacity","1")
+        }); 
     // Nominees
 } else if (nomineesPage != null) {
 
@@ -266,85 +271,6 @@ if (indexPage != null) {
     })
 
 
-
-    let num = 0;
-
-    $(".vote-now").click(function() {
-        $(".vote-now").css("display", "none");
-        $(".vote-overlay").css("display", "block");
-        $(".overlay-bottom").css("display", "none");
-        $(".design").show();
-    })
-
-
-    function yourVote() {
-        $(".vote-value").click(function() {
-            let val1 = parseInt(this.innerHTML);
-
-
-            $(".confirm-vote").hide();
-            $(".result").hide();
-
-
-            $(".usability").show();
-            $(".vote-value").click(function() {
-                let val2 = parseInt(this.innerHTML);
-
-                $(".confirm-vote").hide();
-                $(".result").hide();
-
-
-                $(".creativity").show();
-                $(".vote-value").click(function() {
-                    let val3 = parseInt(this.innerHTML);
-
-
-                    $(".confirm-vote").hide();
-                    $(".result").hide();
-
-
-
-                    $(".content").show();
-                    $(".vote-value").click(function() {
-                        let val4 = parseInt(this.innerHTML);
-                        num = val1 + val2 + val3 + val4
-                        let avg = parseFloat(num / 4);
-                        $(".content").hide();
-                        $(".creativity").hide();
-                        $(".usability").hide();
-                        $(".design").hide();
-                        $(".confirm-vote").show();
-                        $(".result").show();
-                        $(".average").html(avg);
-                        $('.timer').countTo({
-                            from: 0.00,
-                            to: avg,
-                            speed: 1000,
-                            refreshInterval: 50,
-                            decimals: 2,
-                            separator: ','
-                        });
-                    })
-                })
-            })
-
-
-        })
-    }
-
-
-
-    yourVote()
-
-    $(".edit-vote").click(function() {
-            $(".result").hide();
-            $(".confirm-vote").hide();
-            //       yourVote()
-            $(".design").show();
-            yourVote()
-
-
-        })
         // Registration
 } else if (registrationPage != null) {
     const signUpButton = document.getElementById('signUp');
