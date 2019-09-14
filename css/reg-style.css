@@ -1,48 +1,82 @@
+@font-face {
+    font-family: 'DinNextLight';
+    src: url('../fonts/din-next/light/DinNextLight.eot');
+    src: url('../fonts/din-next/light/DinNextLight.eot') format('embedded-opentype'), url('fonts/din-next/light/DinNextLight.woff2') format('woff2'), url('fonts/din-next/light/DinNextLight.woff') format('woff'), url('fonts/din-next/light/DinNextLight.ttf') format('truetype'), url('fonts/din-next/light/DinNextLight.svg#DinNextLight') format('svg');
+}
+
+@font-face {
+    font-family: 'DinNextRegular';
+    src: url('../fonts/din-next/regular/DinNextRegular.eot');
+    src: url('../fonts/din-next/regular/DinNextRegular.eot') format('embedded-opentype'), url('fonts/din-next/regular/DinNextRegular.woff2') format('woff2'), url('fonts/din-next/regular/DinNextRegular.woff') format('woff'), url('fonts/din-next/regular/DinNextRegular.ttf') format('truetype'), url('fonts/din-next/regular/DinNextRegular.svg#DinNextRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'DinNextMedium';
+    src: url('../fonts/din-next/medium/DinNextMedium.eot');
+    src: url('../fonts/din-next/medium/DinNextMedium.eot') format('embedded-opentype'), url('fonts/din-next/medium/DinNextMedium.woff2') format('woff2'), url('fonts/din-next/medium/DinNextMedium.woff') format('woff'), url('fonts/din-next/medium/DinNextMedium.ttf') format('truetype'), url('fonts/din-next/medium/DinNextMedium.svg#DinNextMedium') format('svg');
+}
+
+@font-face {
+    font-family: 'DinNextBold';
+    src: url('../fonts/din-next/bold/DinNextBold.eot');
+    src: url('../fonts/din-next/bold/DinNextBold.eot') format('embedded-opentype'), url('fonts/din-next/bold/DinNextBold.woff2') format('woff2'), url('fonts/din-next/bold/DinNextBold.woff') format('woff'), url('fonts/din-next/bold/DinNextBold.ttf') format('truetype'), url('fonts/din-next/bold/DinNextBold.svg#DinNextBold') format('svg');
+}
+
+
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-body {
-    background: #f6f5f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: right;
-    flex-direction: column;
+
+
+/******************** Registration page *****************************/
+
+.reg-body {
+    font-family: 'DinNextRegular';
+    position: relative;
+    overflow: hidden;
     height: 100vh;
-    margin: -20px 0 50px;
+    text-align: right;
 }
 
 
-/* Registration page */
-
-#overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 5000;
-    /*display: none ;*/
+.reg-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/reg-bg.jpg);
+    background-size: 100% 100%;
 }
 
-#lightbox-item {
-    width: 60%;
-    height: 600px;
+.bg-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.reg-bg .box {
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    min-height: 70%;
 }
 
-h1 {
+.reg-bg .box h1 {
     font-weight: bold;
     margin: 0;
 }
 
-h2 {
+.reg-bg .box h2 {
     text-align: center;
 }
 
-p {
+.reg-bg .box p {
     font-size: 14px;
     font-weight: 100;
     line-height: 20px;
@@ -50,18 +84,47 @@ p {
     margin: 20px 0 30px;
 }
 
-span {
+.reg-bg .box span {
     font-size: 12px;
 }
 
-a {
+.reg-bg .box a {
     color: #333;
     font-size: 14px;
     text-decoration: none;
     margin: 15px 0;
 }
+.reg-bg .box a:hover{
+    color: blue;
+    
+}
 
-button {
+ .btn-login,.btn-signUp {
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: #49c5b6;
+    color: #FFF !important;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+}
+
+
+.btn-login:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn-signUp:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.reg-bg .box button {
     border-radius: 20px;
     border: 1px solid #fff;
     background-color: #49c5b6;
@@ -74,20 +137,20 @@ button {
     transition: transform 80ms ease-in;
 }
 
-button:active {
+.reg-bg .box button:active {
     transform: scale(0.95);
 }
 
-button:focus {
+.reg-bg .box button:focus {
     outline: none;
 }
 
-button.ghost {
+.reg-bg .box button.ghost {
     background-color: transparent;
     border-color: #FFFFFF;
 }
 
-form {
+.reg-bg .box form {
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -98,23 +161,14 @@ form {
     text-align: center;
 }
 
-input {
+.reg-bg .box input {
     background-color: #eee;
     border: none;
-    padding: 12px 15px;
+    border-radius: 10px;
+    padding: 10px 15px;
     margin: 8px 0;
     width: 100%;
-}
-
-.container {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    position: relative;
-    overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+    text-align: right;
 }
 
 .form-container {
@@ -161,7 +215,7 @@ input {
     }
 }
 
-.overlay-container {
+.caption-reg {
     position: absolute;
     top: 0;
     left: 50%;
@@ -172,11 +226,11 @@ input {
     z-index: 100;
 }
 
-.container.right-panel-active .overlay-container {
+.container.right-panel-active .caption-reg {
     transform: translateX(-100%);
 }
 
-.overlay {
+.box .cap-content {
     background: #021859;
     background: -webkit-linear-gradient(to right, #021859, #49c5b6);
     background: linear-gradient(to right, #021859, #49c5b6);
@@ -192,7 +246,7 @@ input {
     transition: transform 0.6s ease-in-out;
 }
 
-.container.right-panel-active .overlay {
+.container.right-panel-active .cap-content {
     transform: translateX(50%);
 }
 
@@ -241,12 +295,16 @@ input {
     margin: 0 5px;
     height: 40px;
     width: 40px;
+    text-decoration: none;
 }
 
 
-/* media queries */
+/* media queries - reg */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 999px) {
+    .reg-bg .box {
+        width: 100%;
+    }
     h1 {
         font-weight: bold;
         font-size: 28px;
@@ -255,37 +313,37 @@ input {
 }
 
 @media only screen and (max-width: 670px) {
-    h1 {
+    .reg-bg .box h1 {
         font-weight: bold;
         font-size: 26px;
         margin: 0;
     }
-    h2 {
+    .reg-bg .box h2 {
         text-align: center;
     }
-    p {
+    .reg-bg .box p {
         font-size: 14px;
         font-weight: 100;
         line-height: 20px;
         letter-spacing: 0.5px;
         margin: 20px 0 30px;
     }
-    span {
+    .reg-bg .box span {
         font-size: 12px;
     }
-    a {
+    .reg-bg .box a {
         color: #333;
         font-size: 14px;
         text-decoration: none;
         margin: 15px 0;
     }
-    button {
+    .reg-bg .box button {
         padding: 10px 30px;
     }
 }
 
 
-/* ! media queries */
+/* ! media queries - reg */
 
 
-/* End registration page */
+/************************ End registration page ***********************/
