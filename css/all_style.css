@@ -546,21 +546,25 @@ ul {
     cursor: pointer;
 }
 
-#nominees .show-more .btn-lg {
+#nominees .show-more .btn-lg,
+#winner .show-more .btn-lg {
     border-radius: 0;
     padding: 0.75rem 1.5rem;
 }
 
-#nominees .show-more .btn-dark {
+#nominees .show-more .btn-dark,
+#winner .show-more .btn-dark {
     background-color: #111;
     border-color: #111;
 }
 
-#nominees .show-more .show-more-btn button {
+#nominees .show-more .show-more-btn button,
+#winner .show-more .show-more-btn button {
     padding: 1rem 6rem;
 }
 
-#nominees .show-more .show-more-btn:hover button {
+#nominees .show-more .show-more-btn:hover button,
+#winner .show-more .show-more-btn:hover button {
     background-color: #333;
     border-color: #333;
 }
