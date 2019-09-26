@@ -410,6 +410,10 @@ ul {
 
 #nominees-nav ul .reload-hov:hover i {
     transform: rotate(-720deg);
+    -webkit-transform: rotate(-720deg);
+    -moz-transform: rotate(-720deg);
+    -ms-transform: rotate(-720deg);
+    -o-transform: rotate(-720deg);
 }
 
 #nominees-nav ul .reload-hov:hover a {
@@ -1297,7 +1301,6 @@ a:hover {
 /*************************** End Footer **********************************/
 
 
-
 /******************** Registration page *****************************/
 
 .reg-body {
@@ -1307,7 +1310,6 @@ a:hover {
     height: 100vh;
     text-align: right;
 }
-
 
 .reg-bg {
     position: relative;
@@ -1361,12 +1363,13 @@ a:hover {
     text-decoration: none;
     margin: 15px 0;
 }
-.reg-bg .box a:hover{
+
+.reg-bg .box a:hover {
     color: blue;
-    
 }
 
- .btn-login,.btn-signUp {
+.btn-login,
+.btn-signUp {
     border-radius: 20px;
     border: 1px solid #fff;
     background-color: #49c5b6;
@@ -1379,7 +1382,6 @@ a:hover {
     transition: transform 80ms ease-in;
     text-decoration: none;
 }
-
 
 .btn-login:hover {
     color: #FFFFFF;
@@ -1482,7 +1484,7 @@ a:hover {
     }
 }
 
-.box  .caption-reg {
+.box .caption-reg {
     position: absolute;
     top: 0;
     left: 50%;
